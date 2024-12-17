@@ -77,17 +77,16 @@ We filter by his IP address, since we think that he was trying to steal cookies 
 We can analyse the ```phpbb_log``` table and see if we can get records for a succesful login attempt.
 Bingo! We can see a record for ```LOG_ADMIN_AUTH_SUCESS``` under the ```log_operation table``` and the IP address confirms it is indeed the contractor.
 
-<img src='/Sherlocks/Bumblebee/logintime.png' width="640" height="360">
 
-
+![logintime](https://gist.github.com/user-attachments/assets/3a013ab6-353e-433b-b94d-b059b6838750)
 
 We can then pick the record from the ```log_operation``` table and use an online converter to change it to human-readable format and this gives us the time in UTC.
 The converter used is https://www.epochconverter.com/
 
 *Flag: 26/04/2023 10:53:12*
 
-<img src='/Sherlocks/Bumblebee/Timestamp.png' width="640" height="360">
 
+![Timestamp](https://gist.github.com/user-attachments/assets/4f9086eb-9e9f-4ae6-9462-5817d677347f)
 -----
 ### Task 6 - In the forum there are plaintext credentials for the LDAP connection, what is the password?
 
@@ -95,8 +94,7 @@ We can check through the ```phpbb_config``` table and search for ```ldap``` whic
 
 *Flag: Passw0rd1*
 
-<img src='/Sherlocks/Bumblebee/ldappd.png' width="640" height="360">
-
+![ldappd](https://gist.github.com/user-attachments/assets/118a0578-ec68-4f4c-953e-245c24d29b2f)
 -----
 ### Task 7 - What is the user agent of the Administrator user?
 
@@ -104,21 +102,21 @@ We know the IP address of Forela ```10.255.254.2``` and can filter by it in the 
 
 *Flag: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36*
 
-<img src='/Sherlocks/Bumblebee/useragent.png' width="640" height="360">
 
+![useragent](https://gist.github.com/user-attachments/assets/0074e984-ec8e-4681-83d3-f307a987f168)
 -----
 ### Task 8 - What time did the contractor add themselves to the Administrator group? (UTC)
 
 Tracing back to the point where we identified the succesful login, we can also see a record for ```LOG_USER_ADDED``` and the ```log_data``` column entry shows us the user ```apoole``` is part of the ```Administrator``` group.
 
-<img src='/Sherlocks/Bumblebee/adminadd.png' width="640" height="360">
+![adminadd](https://gist.github.com/user-attachments/assets/6d542e5c-f7a0-4b5d-a462-df9fec9cff16)
 
 We can convert the timestamp to human-readable format and get the answer.
 
 *Flag: 26/04/2023 10:53:51*
 
-<img src='/Sherlocks/Bumblebee/timestampadmin.png' width="640" height="360">
 
+![timestampadmin](https://gist.github.com/user-attachments/assets/418a777b-1ade-41ae-84a9-59c984b9e0ec)
 -----
 ### Task 9 - What time did the contractor download the database backup? (UTC)
 
@@ -148,4 +146,4 @@ While analysing the entry for the backup download, we can find the file size ind
 Nos vemos en mi próximo artículo...
 
 
-<img src='/favicon.png' width="40" height="40">
+![favicon](https://gist.github.com/user-attachments/assets/62b93db8-5f62-45de-8ba1-c55dcf201000)
