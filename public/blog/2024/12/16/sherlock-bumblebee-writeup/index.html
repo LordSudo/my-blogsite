@@ -10,7 +10,7 @@
 <meta name="ICBM" content="19.0760, 72.8777">
 <meta name="geo.position" content="19.0760;72.8777">
 <meta name="geo.region" content="IN-MH">
-<meta name="geo.placename" content="Mumbai">
+<meta name="geo.placename" content="Nairobi">
 <title>Sherlock Bumblebee writeup | Realm of Justice</title>
 
 
@@ -36,8 +36,8 @@
   
   
     <div class="flex flex-col gap-1">
-      <a href="http://localhost:1313/" class="text-4xl font-bold hover:text-sky-400 whitespace-nowrap">Nayan Seth</a>
-      <p>Think Good! Do Good!</p>
+      <a href="http://localhost:1313/" class="text-4xl font-bold hover:text-sky-400 whitespace-nowrap">Lord Sudo</a>
+      <p>Missing Variable</p>
     </div>
   
 
@@ -72,6 +72,7 @@
     </svg>
   </div>
 </nav>
+
 
 </header>
 
@@ -114,83 +115,79 @@
       <hr />
       <div class="flex flex-col gap-10">
         <div class="prose prose-invert max-w-full">
-          <!-- raw HTML omitted -->
+          <p><img src="https://gist.github.com/user-attachments/assets/9a9b528d-89c0-47ba-af23-7715f0369989" alt="banner"></p>
 <h1 id="htb-sherlocks---bumblebee">HTB SHERLOCKS - BUMBLEBEE</h1>
 <hr>
 <h2 id="description">Description</h2>
 <p>An external contractor has accessed the internal forum here at Forela via the Guest WiFi and they appear to have stolen credentials for the administrative user! We have attached some logs from the forum and a full database dump in sqlite3 format to help you in your investigation.</p>
 <h2 id="files-attached">Files Attached</h2>
-<!-- raw HTML omitted -->
+<p><img src="https://gist.github.com/user-attachments/assets/6fbcf707-1bf3-407f-a425-ab6bf23db7de" alt="Files"></p>
 <hr>
 <h2 id="solution">Solution</h2>
 <p>We shall use a DB Browser for SQLite to make analysis easier. This can be downloaded from <a href="https://sqlitebrowser.org/">https://sqlitebrowser.org/</a>.</p>
 <p>Loading the database file we can see that we have various tables and can now begin analysis.</p>
-<!-- raw HTML omitted -->
+<p><img src="https://gist.github.com/user-attachments/assets/65761d69-82a5-4054-9244-0ee2bd10dfee" alt="sqlite db"></p>
 <hr>
 <h3 id="task-1---what-was-the-username-of-the-external-contractor">Task 1 - What was the username of the external contractor?</h3>
 <p>Checking through the various tables, we find one called <code>phpbb_users</code> and come across usernames that have an email with a domain <code>@contractor.net</code>. This gives us the username of the external contractor.</p>
 <p><em>Flag: apoole1</em></p>
-<!-- raw HTML omitted -->
+<p><img src="https://gist.github.com/user-attachments/assets/17289781-546d-44fc-b426-c1f65a39bcd7" alt="username"></p>
 <hr>
 <h3 id="task-2---what-ip-address-did-the-contractor-use-to-create-their-account">Task 2 - What IP address did the contractor use to create their account?</h3>
 <p>Checking through the same table, we can find the IP address in a column called <code>user_ip</code> and cross referencing with the username we get our IP address.</p>
 <p><em>Flag: 10.10.0.78</em></p>
-<!-- raw HTML omitted -->
+<p><img src="https://gist.github.com/user-attachments/assets/d282f3a8-dda7-4932-83d4-09611af06a78" alt="ipaddr"></p>
 <hr>
 <h3 id="task-3---what-is-the-post_id-of-the-malicious-post-that-the-contractor-made">Task 3 - What is the post_id of the malicious post that the contractor made?</h3>
 <p>Sifting through the tables, we can see one that is named <code>phpbb_posts</code> and since we know the attackers IP address, matching that we can get the post_id  of the malicious post made from the column <code>post_id</code></p>
 <p><em>Flag: 9</em></p>
 <p>Skimming through the <code>post_text</code> we could speculate that the malicious actor probably tried to set and check for cookies specifically <code>phpbb_token</code> in this case which confirms that it is indeed malicious.</p>
-<!-- raw HTML omitted -->
+<p><img src="https://gist.github.com/user-attachments/assets/1c0aa979-ef18-4e1d-850b-3a9e0f11ef86" alt="postid"></p>
 <hr>
 <h3 id="task-4---what-is-the-full-url-that-the-credential-stealer-sends-its-data-to">Task 4 - What is the full URL that the credential stealer sends its data to?</h3>
 <p>We could analyse the malicious text found in the column <code>post_text</code> and filter by the attacker&rsquo;s IP address.
 This gives us the full URL we were looking for.</p>
 <p>We filter by his IP address, since we think that he was trying to steal cookies and hence would want them to be reflected back to him.</p>
 <p><em>Flag: http://10.10.0.78/update.php</em></p>
-<!-- raw HTML omitted -->
+<p><img src="https://gist.github.com/user-attachments/assets/a47b6d89-6a0e-4c98-9bd7-6d68f4e9e8f4" alt="urlpath"></p>
 <hr>
 <h3 id="task-5---when-did-the-contractor-log-into-the-forum-as-the-administrator-utc">Task 5 - When did the contractor log into the forum as the administrator? (UTC)</h3>
 <p>We can analyse the <code>phpbb_log</code> table and see if we can get records for a succesful login attempt.
 Bingo! We can see a record for <code>LOG_ADMIN_AUTH_SUCESS</code> under the <code>log_operation table</code> and the IP address confirms it is indeed the contractor.</p>
-<!-- raw HTML omitted -->
+<p><img src="https://gist.github.com/user-attachments/assets/3a013ab6-353e-433b-b94d-b059b6838750" alt="logintime"></p>
 <p>We can then pick the record from the <code>log_operation</code> table and use an online converter to change it to human-readable format and this gives us the time in UTC.
 The converter used is <a href="https://www.epochconverter.com/">https://www.epochconverter.com/</a></p>
 <p><em>Flag: 26/04/2023 10:53:12</em></p>
-<!-- raw HTML omitted -->
-<hr>
+<h2 id="timestamphttpsgistgithubcomuser-attachmentsassets4f9086eb-9e9f-4ae6-9462-5817d677347f"><img src="https://gist.github.com/user-attachments/assets/4f9086eb-9e9f-4ae6-9462-5817d677347f" alt="Timestamp"></h2>
 <h3 id="task-6---in-the-forum-there-are-plaintext-credentials-for-the-ldap-connection-what-is-the-password">Task 6 - In the forum there are plaintext credentials for the LDAP connection, what is the password?</h3>
 <p>We can check through the <code>phpbb_config</code> table and search for <code>ldap</code> which gives us the password.</p>
 <p><em>Flag: Passw0rd1</em></p>
-<!-- raw HTML omitted -->
-<hr>
+<h2 id="ldappdhttpsgistgithubcomuser-attachmentsassets118a0578-ec68-4f4c-953e-245c24d29b2f"><img src="https://gist.github.com/user-attachments/assets/118a0578-ec68-4f4c-953e-245c24d29b2f" alt="ldappd"></h2>
 <h3 id="task-7---what-is-the-user-agent-of-the-administrator-user">Task 7 - What is the user agent of the Administrator user?</h3>
 <p>We know the IP address of Forela <code>10.255.254.2</code> and can filter by it in the <code>access.log</code> to get the user agent.</p>
 <p><em>Flag: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36</em></p>
-<!-- raw HTML omitted -->
-<hr>
+<h2 id="useragenthttpsgistgithubcomuser-attachmentsassets0074e984-ec8e-4681-83d3-f307a987f168"><img src="https://gist.github.com/user-attachments/assets/0074e984-ec8e-4681-83d3-f307a987f168" alt="useragent"></h2>
 <h3 id="task-8---what-time-did-the-contractor-add-themselves-to-the-administrator-group-utc">Task 8 - What time did the contractor add themselves to the Administrator group? (UTC)</h3>
 <p>Tracing back to the point where we identified the succesful login, we can also see a record for <code>LOG_USER_ADDED</code> and the <code>log_data</code> column entry shows us the user <code>apoole</code> is part of the <code>Administrator</code> group.</p>
-<!-- raw HTML omitted -->
+<p><img src="https://gist.github.com/user-attachments/assets/6d542e5c-f7a0-4b5d-a462-df9fec9cff16" alt="adminadd"></p>
 <p>We can convert the timestamp to human-readable format and get the answer.</p>
 <p><em>Flag: 26/04/2023 10:53:51</em></p>
-<!-- raw HTML omitted -->
-<hr>
+<h2 id="timestampadminhttpsgistgithubcomuser-attachmentsassets418a777b-1ade-41ae-84a9-59c984b9e0ec"><img src="https://gist.github.com/user-attachments/assets/418a777b-1ade-41ae-84a9-59c984b9e0ec" alt="timestampadmin"></h2>
 <h3 id="task-9---what-time-did-the-contractor-download-the-database-backup-utc">Task 9 - What time did the contractor download the database backup? (UTC)</h3>
 <p>While still in the <code>phpbb_log</code> table, we can see a record for a DB Backup and thus we can now search through the <code>access.log</code> for the time when he downloaded the backup.</p>
 <p>Since we know it is a SQL Database, we could probably search for <code>sql</code> and we get the particular entry.
 The entry also shows that it is a GET request and therefore we can confirm the attacker was trying to download the backup.</p>
-<!-- raw HTML omitted -->
+<p><img src="https://gist.github.com/user-attachments/assets/b7edd48a-a871-46ad-8f6f-84488544f2af" alt="sqlbackup"></p>
 <p>From here, we can see the timezone is <code>+0100</code> and to get UTC we subtract one hour giving us the answer.</p>
 <p><em>Flag: 26/04/2023 11:01:38</em></p>
 <hr>
 <h3 id="task-10---what-was-the-size-in-bytes-of-the-database-backup-as-stated-by-accesslog">Task 10 - What was the size in bytes of the database backup as stated by access.log?</h3>
 <p>While analysing the entry for the backup download, we can find the file size indicated right beside the status code [200].</p>
 <p><em>Flag: 34707</em></p>
-<!-- raw HTML omitted -->
+<p><img src="https://gist.github.com/user-attachments/assets/fdbe8fdf-bd67-4c78-a885-02d049cbb20b" alt="sqlbackupsize"></p>
 <hr>
-<p>Nos vemos en mi próximo artículo&hellip;
-<!-- raw HTML omitted --></p>
+<p>Nos vemos en mi próximo artículo&hellip;</p>
+<p><img src="https://gist.github.com/user-attachments/assets/62b93db8-5f62-45de-8ba1-c55dcf201000" alt="favicon"></p>
 
           <hr />
         </div>
