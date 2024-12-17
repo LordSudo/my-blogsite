@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+
+<meta name="ICBM" content="19.0760, 72.8777">
+<meta name="geo.position" content="19.0760;72.8777">
+<meta name="geo.region" content="IN-MH">
+<meta name="geo.placename" content="Mumbai">
+<title>Sherlock Bumblebee writeup | Realm of Justice</title>
+
+
+      <link rel="stylesheet" href="/css/tailwind.css" type="text/css">
+
+</head>
+
+<body class="bg-gradient-to-r from-slate-900 to-slate-800 font-mono text-white">
+  <div class="container mx-auto flex flex-col px-4 xl:w-8/12 sm:max-w-full">
+    
+  
+
+  <header class="flex flex-row py-4" >
+
+  
+
+
+
+  <nav
+    class="flex flex-row items-center w-full justify-between">
+
+
+  
+  
+    <div class="flex flex-col gap-1">
+      <a href="http://localhost:1313/" class="text-4xl font-bold hover:text-sky-400 whitespace-nowrap">Nayan Seth</a>
+      <p>Think Good! Do Good!</p>
+    </div>
+  
+
+  <div class="dropdown-menu flex flex-row absolute max-lg:w-full max-lg:items-center max-lg:justify-center max-lg:-top-full lg:static max-lg:bg-slate-900 max-lg:h-[calc(100dvh)] max-lg:left-0">
+    <ul class="flex flex-col lg:flex-row gap-2">
+      
+  <li class="font-bold border border-sky-400 px-3 py-2 hover:bg-sky-400 focus:text-sky-400 text-center">
+    <a href="/about.html">About</a>
+  </li>
+
+  <li class="font-bold border border-sky-400 px-3 py-2 hover:bg-sky-400 focus:text-sky-400 text-center">
+    <a href="/blog">Blog</a>
+  </li>
+
+  <li class="font-bold border border-sky-400 px-3 py-2 hover:bg-sky-400 focus:text-sky-400 text-center">
+    <a href="/tags">Tags</a>
+  </li>
+
+    </ul>
+  </div>
+  <div class="open-dropdown-button lg:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32" fill="white">
+      <path
+        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+    </svg>
+  </div>
+  <div class="close-dropdown-button hidden z-50">
+    <svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 384 512" width="32" height="32" fill="white">
+      <path
+        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+    </svg>
+  </div>
+</nav>
+
+</header>
+
+  
+  <div class="flex flex-col pt-8 gap-10">
+    
+    <div class="flex flex-col w-full gap-4">
+      <h2 class="text-3xl max-sm:text-2xl font-bold">Sherlock Bumblebee writeup</h2>
+      
+      <div class="flex flex-row flex-wrap max-md:gap-4 gap-10">
+        <p>📅 Monday, Dec 16, 2024</p>
+        <p>⏰ 23:09:47</p>
+        
+          <p>🔄 Monday, Dec 16, 2024 23:09:47</p>
+        
+        <p>📖 Reading time: 4 min</p>
+      </div>
+      
+      <div class="flex flex-row gap-2 flex-nowrap">
+        <div class="py-1">📝</div>
+<div class="flex flex-wrap gap-2">
+  
+    <a href='/authors/lordsudo'
+      class="border border-orange-400 p-1 hover:bg-orange-400 focus:bg-orange-400 text-center focus:text-color-white">
+      Lordsudo
+    </a>
+  
+</div>
+      </div>
+      
+      <div class="flex flex-row gap-2 flex-nowrap">
+        <p class="py-1">🏷️</p>
+<div class="flex flex-wrap gap-2">
+  
+    <a href='/tags/sherlocks'
+    class="border border-sky-400 p-1 hover:bg-sky-400 focus:bg-sky-400 text-center">Sherlocks</a>
+  
+</div>
+      </div>
+      <hr />
+      <div class="flex flex-col gap-10">
+        <div class="prose prose-invert max-w-full">
+          <!-- raw HTML omitted -->
+<h1 id="htb-sherlocks---bumblebee">HTB SHERLOCKS - BUMBLEBEE</h1>
+<hr>
+<h2 id="description">Description</h2>
+<p>An external contractor has accessed the internal forum here at Forela via the Guest WiFi and they appear to have stolen credentials for the administrative user! We have attached some logs from the forum and a full database dump in sqlite3 format to help you in your investigation.</p>
+<h2 id="files-attached">Files Attached</h2>
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="solution">Solution</h2>
+<p>We shall use a DB Browser for SQLite to make analysis easier. This can be downloaded from <a href="https://sqlitebrowser.org/">https://sqlitebrowser.org/</a>.</p>
+<p>Loading the database file we can see that we have various tables and can now begin analysis.</p>
+<!-- raw HTML omitted -->
+<hr>
+<h3 id="task-1---what-was-the-username-of-the-external-contractor">Task 1 - What was the username of the external contractor?</h3>
+<p>Checking through the various tables, we find one called <code>phpbb_users</code> and come across usernames that have an email with a domain <code>@contractor.net</code>. This gives us the username of the external contractor.</p>
+<p><em>Flag: apoole1</em></p>
+<!-- raw HTML omitted -->
+<hr>
+<h3 id="task-2---what-ip-address-did-the-contractor-use-to-create-their-account">Task 2 - What IP address did the contractor use to create their account?</h3>
+<p>Checking through the same table, we can find the IP address in a column called <code>user_ip</code> and cross referencing with the username we get our IP address.</p>
+<p><em>Flag: 10.10.0.78</em></p>
+<!-- raw HTML omitted -->
+<hr>
+<h3 id="task-3---what-is-the-post_id-of-the-malicious-post-that-the-contractor-made">Task 3 - What is the post_id of the malicious post that the contractor made?</h3>
+<p>Sifting through the tables, we can see one that is named <code>phpbb_posts</code> and since we know the attackers IP address, matching that we can get the post_id  of the malicious post made from the column <code>post_id</code></p>
+<p><em>Flag: 9</em></p>
+<p>Skimming through the <code>post_text</code> we could speculate that the malicious actor probably tried to set and check for cookies specifically <code>phpbb_token</code> in this case which confirms that it is indeed malicious.</p>
+<!-- raw HTML omitted -->
+<hr>
+<h3 id="task-4---what-is-the-full-url-that-the-credential-stealer-sends-its-data-to">Task 4 - What is the full URL that the credential stealer sends its data to?</h3>
+<p>We could analyse the malicious text found in the column <code>post_text</code> and filter by the attacker&rsquo;s IP address.
+This gives us the full URL we were looking for.</p>
+<p>We filter by his IP address, since we think that he was trying to steal cookies and hence would want them to be reflected back to him.</p>
+<p><em>Flag: http://10.10.0.78/update.php</em></p>
+<!-- raw HTML omitted -->
+<hr>
+<h3 id="task-5---when-did-the-contractor-log-into-the-forum-as-the-administrator-utc">Task 5 - When did the contractor log into the forum as the administrator? (UTC)</h3>
+<p>We can analyse the <code>phpbb_log</code> table and see if we can get records for a succesful login attempt.
+Bingo! We can see a record for <code>LOG_ADMIN_AUTH_SUCESS</code> under the <code>log_operation table</code> and the IP address confirms it is indeed the contractor.</p>
+<!-- raw HTML omitted -->
+<p>We can then pick the record from the <code>log_operation</code> table and use an online converter to change it to human-readable format and this gives us the time in UTC.
+The converter used is <a href="https://www.epochconverter.com/">https://www.epochconverter.com/</a></p>
+<p><em>Flag: 26/04/2023 10:53:12</em></p>
+<!-- raw HTML omitted -->
+<hr>
+<h3 id="task-6---in-the-forum-there-are-plaintext-credentials-for-the-ldap-connection-what-is-the-password">Task 6 - In the forum there are plaintext credentials for the LDAP connection, what is the password?</h3>
+<p>We can check through the <code>phpbb_config</code> table and search for <code>ldap</code> which gives us the password.</p>
+<p><em>Flag: Passw0rd1</em></p>
+<!-- raw HTML omitted -->
+<hr>
+<h3 id="task-7---what-is-the-user-agent-of-the-administrator-user">Task 7 - What is the user agent of the Administrator user?</h3>
+<p>We know the IP address of Forela <code>10.255.254.2</code> and can filter by it in the <code>access.log</code> to get the user agent.</p>
+<p><em>Flag: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36</em></p>
+<!-- raw HTML omitted -->
+<hr>
+<h3 id="task-8---what-time-did-the-contractor-add-themselves-to-the-administrator-group-utc">Task 8 - What time did the contractor add themselves to the Administrator group? (UTC)</h3>
+<p>Tracing back to the point where we identified the succesful login, we can also see a record for <code>LOG_USER_ADDED</code> and the <code>log_data</code> column entry shows us the user <code>apoole</code> is part of the <code>Administrator</code> group.</p>
+<!-- raw HTML omitted -->
+<p>We can convert the timestamp to human-readable format and get the answer.</p>
+<p><em>Flag: 26/04/2023 10:53:51</em></p>
+<!-- raw HTML omitted -->
+<hr>
+<h3 id="task-9---what-time-did-the-contractor-download-the-database-backup-utc">Task 9 - What time did the contractor download the database backup? (UTC)</h3>
+<p>While still in the <code>phpbb_log</code> table, we can see a record for a DB Backup and thus we can now search through the <code>access.log</code> for the time when he downloaded the backup.</p>
+<p>Since we know it is a SQL Database, we could probably search for <code>sql</code> and we get the particular entry.
+The entry also shows that it is a GET request and therefore we can confirm the attacker was trying to download the backup.</p>
+<!-- raw HTML omitted -->
+<p>From here, we can see the timezone is <code>+0100</code> and to get UTC we subtract one hour giving us the answer.</p>
+<p><em>Flag: 26/04/2023 11:01:38</em></p>
+<hr>
+<h3 id="task-10---what-was-the-size-in-bytes-of-the-database-backup-as-stated-by-accesslog">Task 10 - What was the size in bytes of the database backup as stated by access.log?</h3>
+<p>While analysing the entry for the backup download, we can find the file size indicated right beside the status code [200].</p>
+<p><em>Flag: 34707</em></p>
+<!-- raw HTML omitted -->
+<hr>
+<p>Nos vemos en mi próximo artículo&hellip;
+<!-- raw HTML omitted --></p>
+
+          <hr />
+        </div>
+        <div>
+          
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+    this.page.url = "http:\/\/localhost:1313\/blog\/2024\/12\/16\/sherlock-bumblebee-writeup\/";
+    this.page.identifier = "sherlocks-bumblebee"; 
+    };
+    (function () { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://mydisquscode.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer flex items-center justify-center">
+  <div class="py-4">
+  <footer>
+    <p class="whitespace-nowrap">© 2024. All rights reserved.</p>
+  </footer>
+</div>
+</div>
+  </div>
+  
+
+  </div>
+  
+      <script type="text/javascript" src="/js/navbar.js"></script>
+
+  <script id="dsq-count-scr" src="//nayanseth.disqus.com/count.js" async></script>
+  
+</body>
+
+</html>
