@@ -8,8 +8,7 @@ layout: "post"
 tags: ["Sherlocks"]
 authors: ["Lordsudo"]
 ---
-
-<img src='/Sherlocks/Bumblebee/bannerbumblebee.png' width="640" height="140">
+![banner](https://gist.github.com/user-attachments/assets/9a9b528d-89c0-47ba-af23-7715f0369989)
 
 # HTB SHERLOCKS - BUMBLEBEE
 -----
@@ -19,7 +18,7 @@ authors: ["Lordsudo"]
 An external contractor has accessed the internal forum here at Forela via the Guest WiFi and they appear to have stolen credentials for the administrative user! We have attached some logs from the forum and a full database dump in sqlite3 format to help you in your investigation.
 
 ## Files Attached
-<img src='/Sherlocks/Bumblebee/Files.png' width="640" height="140">
+![Files](https://gist.github.com/user-attachments/assets/6fbcf707-1bf3-407f-a425-ab6bf23db7de)
 
 -----
 ## Solution
@@ -28,7 +27,7 @@ We shall use a DB Browser for SQLite to make analysis easier. This can be downlo
 
 Loading the database file we can see that we have various tables and can now begin analysis.
 
-<img src='/Sherlocks/Bumblebee/sqlite db.png' width="640" height="360">
+![sqlite db](https://gist.github.com/user-attachments/assets/65761d69-82a5-4054-9244-0ee2bd10dfee)
 
 -----
 ### Task 1 - What was the username of the external contractor?
@@ -37,7 +36,7 @@ Checking through the various tables, we find one called ```phpbb_users``` and co
 
 *Flag: apoole1*
 
-<img src='/Sherlocks/Bumblebee/username.png' width="640" height="360">
+![username](https://gist.github.com/user-attachments/assets/17289781-546d-44fc-b426-c1f65a39bcd7)
 
 -----
 ### Task 2 - What IP address did the contractor use to create their account?
@@ -46,7 +45,7 @@ Checking through the same table, we can find the IP address in a column called `
 
 *Flag: 10.10.0.78*
 
-<img src='/Sherlocks/Bumblebee/ipaddr.png' width="640" height="360">
+![ipaddr](https://gist.github.com/user-attachments/assets/d282f3a8-dda7-4932-83d4-09611af06a78)
 
 -----
 ### Task 3 - What is the post_id of the malicious post that the contractor made?
@@ -57,7 +56,8 @@ Sifting through the tables, we can see one that is named ```phpbb_posts``` and s
 
 Skimming through the ```post_text``` we could speculate that the malicious actor probably tried to set and check for cookies specifically ```phpbb_token``` in this case which confirms that it is indeed malicious.
 
-<img src='/Sherlocks/Bumblebee/postid.png' width="640" height="360">
+![postid](https://gist.github.com/user-attachments/assets/1c0aa979-ef18-4e1d-850b-3a9e0f11ef86)
+
 
 -----
 ### Task 4 - What is the full URL that the credential stealer sends its data to?
@@ -69,7 +69,7 @@ We filter by his IP address, since we think that he was trying to steal cookies 
 
 *Flag: http://10.10.0.78/update.php*
 
-<img src='/Sherlocks/Bumblebee/urlpath.png' width="640" height="360">
+![urlpath](https://gist.github.com/user-attachments/assets/a47b6d89-6a0e-4c98-9bd7-6d68f4e9e8f4)
 
 -----
 ### Task 5 - When did the contractor log into the forum as the administrator? (UTC)
@@ -78,6 +78,8 @@ We can analyse the ```phpbb_log``` table and see if we can get records for a suc
 Bingo! We can see a record for ```LOG_ADMIN_AUTH_SUCESS``` under the ```log_operation table``` and the IP address confirms it is indeed the contractor.
 
 <img src='/Sherlocks/Bumblebee/logintime.png' width="640" height="360">
+
+
 
 We can then pick the record from the ```log_operation``` table and use an online converter to change it to human-readable format and this gives us the time in UTC.
 The converter used is https://www.epochconverter.com/
@@ -125,7 +127,8 @@ While still in the ```phpbb_log``` table, we can see a record for a DB Backup an
 Since we know it is a SQL Database, we could probably search for ```sql``` and we get the particular entry.
 The entry also shows that it is a GET request and therefore we can confirm the attacker was trying to download the backup.
 
-<img src='/Sherlocks/Bumblebee/sqlbackup.png' width="640" height="360">
+
+![sqlbackup](https://gist.github.com/user-attachments/assets/b7edd48a-a871-46ad-8f6f-84488544f2af)
 
 From here, we can see the timezone is ```+0100``` and to get UTC we subtract one hour giving us the answer.
 
@@ -138,11 +141,11 @@ While analysing the entry for the backup download, we can find the file size ind
 
 *Flag: 34707*
 
-<img src='/Sherlocks/Bumblebee/sqlbackupsize.png' width="640" height="360">
-
-
+![sqlbackupsize](https://gist.github.com/user-attachments/assets/fdbe8fdf-bd67-4c78-a885-02d049cbb20b)
 
 -----
 
 Nos vemos en mi próximo artículo...
+
+
 <img src='/favicon.png' width="40" height="40">
