@@ -6,7 +6,7 @@ timeZone: "Africa/Nairobi"
 menus:
   main:
     - identifier: about
-      name: About
+      name: whomai
       url: /about.html
       weight: 20
     - identifier: blog
