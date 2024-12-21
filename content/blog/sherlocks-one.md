@@ -1,6 +1,6 @@
 ---
 title: "HTB Sherlocks:Bumblebee Writeup"
-date: 2024-01-10T23:09:47+05:30
+date: 2024-01-10T09:09:47+05:30
 draft: false
 params:
   slug: "sherlocks-bumblebee"
