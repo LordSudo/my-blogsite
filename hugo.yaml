@@ -49,8 +49,8 @@ ignoreFiles:
 #     - sitemap.xml
 params:
   social:
-    - name: github
-      url: https://github.com/lordsudo
+    #- name: github
+      #url: https://github.com/lordsudo
     - name: x
       url: https://x.com/L0rd5ud0
     #- name: youtube
@@ -58,7 +58,9 @@ params:
     - name: discord
       url: https://discord.com/l0rd5ud0
     - name: linkedin
-      url: https://linkedin.com   
+      url: https://linkedin.com  
+    - name: mail
+      url: mailto:info@lordsudo.com
     #- name: "buy me a coffee"
       #url: https://buymeacoffee.com/lordsudo
   #disqus: "mydisquscode"
