@@ -1,11 +1,11 @@
 ---
-title: 'Sherlock Bumblebee writeup'
-date: 2024-11-16T23:09:47+05:30
+title: "HTB Sherlocks:Bumblebee Writeup"
+date: 2024-01-10T23:09:47+05:30
 draft: false
 params:
   slug: "sherlocks-bumblebee"
 layout: "post"
-tags: ["Sherlocks"]
+tags: ["Sherlocks", "HTB"]
 authors: ["Lordsudo"]
 ---
 ![banner](https://gist.github.com/user-attachments/assets/9a9b528d-89c0-47ba-af23-7715f0369989)
