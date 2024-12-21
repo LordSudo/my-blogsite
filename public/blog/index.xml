@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Lord Sudo</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>http://localhost:1313/my-blogsite/blog/</link>
     <description>Recent content in Blog on Lord Sudo</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 16 Dec 2024 23:09:47 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/my-blogsite/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sherlock Bumblebee writeup</title>
-      <link>http://localhost:1313/blog/2024/12/16/sherlock-bumblebee-writeup/</link>
+      <link>http://localhost:1313/my-blogsite/blog/2024/12/16/sherlock-bumblebee-writeup/</link>
       <pubDate>Mon, 16 Dec 2024 23:09:47 +0530</pubDate>
-      <guid>http://localhost:1313/blog/2024/12/16/sherlock-bumblebee-writeup/</guid>
+      <guid>http://localhost:1313/my-blogsite/blog/2024/12/16/sherlock-bumblebee-writeup/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://gist.github.com/user-attachments/assets/9a9b528d-89c0-47ba-af23-7715f0369989&#34; alt=&#34;banner&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;htb-sherlocks---bumblebee&#34;&gt;HTB SHERLOCKS - BUMBLEBEE&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;An external contractor has accessed the internal forum here at Forela via the Guest WiFi and they appear to have stolen credentials for the administrative user! We have attached some logs from the forum and a full database dump in sqlite3 format to help you in your investigation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;files-attached&#34;&gt;Files Attached&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://gist.github.com/user-attachments/assets/6fbcf707-1bf3-407f-a425-ab6bf23db7de&#34; alt=&#34;Files&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;&#xA;&lt;p&gt;We shall use a DB Browser for SQLite to make analysis easier. This can be downloaded from &lt;a href=&#34;https://sqlitebrowser.org/&#34;&gt;https://sqlitebrowser.org/&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
