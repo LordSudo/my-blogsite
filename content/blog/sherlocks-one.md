@@ -1,6 +1,6 @@
 ---
 title: 'Sherlock Bumblebee writeup'
-date: 2024-12-16T23:09:47+05:30
+date: 2024-11-16T23:09:47+05:30
 draft: false
 params:
   slug: "sherlocks-bumblebee"

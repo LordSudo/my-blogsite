@@ -10,7 +10,7 @@ menus:
       url: /about.html
       weight: 20
     - identifier: blog
-      name: Blog
+      name: Blogs
       url: /blog
       weight: 30
     - identifier: tags
@@ -57,6 +57,8 @@ params:
       #url: https://youtube.com/myusername
     - name: linkedin
       url: https://linkedin.com/in/myusername
+    - name: discord
+      url: https://discord.com/l0rd5ud0
     #- name: "buy me a coffee"
       #url: https://buymeacoffee.com/lordsudo
   #disqus: "mydisquscode"
