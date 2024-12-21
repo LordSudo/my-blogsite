@@ -6,7 +6,7 @@ timeZone: "Africa/Nairobi"
 menus:
   main:
     - identifier: about
-      name: whomai
+      name: whoami
       url: /about.html
       weight: 20
     - identifier: blog
@@ -55,10 +55,10 @@ params:
       url: https://x.com/L0rd5ud0
     #- name: youtube
       #url: https://youtube.com/myusername
-    - name: linkedin
-      url: https://linkedin.com/in/myusername
     - name: discord
       url: https://discord.com/l0rd5ud0
+    - name: linkedin
+      url: https://linkedin.com   
     #- name: "buy me a coffee"
       #url: https://buymeacoffee.com/lordsudo
   #disqus: "mydisquscode"
