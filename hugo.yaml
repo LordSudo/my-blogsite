@@ -1,6 +1,6 @@
 baseURL: 'https://lordsudo.github.io/my-blogsite'
 languageCode: 'en-us'
-title: 'Lord Sudo'
+title: 'Lord Sudo: Decrypting the Labyrinth'
 theme: 'terminal'
 timeZone: "Africa/Nairobi"
 menus:
