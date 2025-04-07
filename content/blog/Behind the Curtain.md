@@ -5,7 +5,7 @@ draft: false
 params:
   slug: ""
 layout: "post"
-tags: ["blogs", "Social Engineering"]
+tags: ["Social Engineering"]
 authors: ["Lordsudo"]
 ---
 # **Behind the Curtain**
