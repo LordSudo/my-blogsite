@@ -6,15 +6,20 @@ layout: "terms"
 description: "About - {{ .Site.Title }}"
 url: "/about.html"
 ---
+**I am Lord Sudo.**  
+Red teamer. CTF tactician. Student of systems—and their failure points.  
+Proud operative of **p3rf3ctr00t**.
 
-Greetings, intrepid wanderers!  
-I am **Lord Sudo**, a red teamer and CTF player for [p3rf3ctr00t](https://twitter.com/p3rf3ctr00t).
+This space is not a blog. It is a ledger.  
+A chronicle of engagements, extractions, exploits—both technical and psychological.
 
-Join me on a journey through the enigmatic landscapes of digital intrigue. Within these virtual corridors, secrets await discovery, and the art of exploration becomes the key to unlocking hidden knowledge.
+I navigate the unseen layers of digital infrastructure, where security is an illusion and silence is a weapon. Whether it's code, configuration, or the human element—if it can be broken, it can be understood. And if it can be understood, it can be controlled.
 
-Dare to delve into the heart of my mysterious works, where the boundaries between reality and the digital realm blur. Uncover the cryptic narratives that weave through the tapestry of cybernetic adventures.
+Each entry here reflects a lesson learned, a boundary tested, or a veil lifted.
 
-Are you ready to challenge the status quo?   
-#### The adventure begins!!
+This isn’t a showcase.  
+It’s a signal.  
+To those who see the beauty in systems… and the elegance in subverting them.
 
+Welcome to the other side.
 
