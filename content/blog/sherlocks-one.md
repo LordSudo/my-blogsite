@@ -145,5 +145,3 @@ While analysing the entry for the backup download, we can find the file size ind
 
 Nos vemos en mi próximo artículo...
 
-
-![favicon](https://gist.github.com/user-attachments/assets/62b93db8-5f62-45de-8ba1-c55dcf201000)
