@@ -10,7 +10,7 @@ authors: ["Lordsudo"]
 ---
 ## Prologue — Into the Shadows
 
-In the endless chess game between defenders and adversaries, sharpening one's edge is a ritual as old as the hunt itself. Seeking to refresh my threat intelligence tradecraft, I turned to CyberDefenders, a playground for digital detectives, and selected a case that promised just the right dose of malice: Oski.
+In the endless chess game between defenders and adversaries, sharpening one's edge is a ritual as old as the hunt itself. Seeking to refresh my threat intelligence tradecraft, I turned to CyberDefenders, a playground for digital detectives, and selected a case that promised just the right dose of malice: Oski. [Access it from here](https://cyberdefenders.org/blueteam-ctf-challenges/oski/)
 
 Beneath its name lay the fragments of a malicious campaign, waiting to be pieced together — a puzzle designed to challenge both observation and deduction. What began as an exercise would soon unravel into a tale of compromise, command, and control.
 
