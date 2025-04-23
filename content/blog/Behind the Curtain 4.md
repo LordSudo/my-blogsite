@@ -1,6 +1,6 @@
 ---
 title: "Behind the Curtain - Part 4: The Shadow's Price"
-date: 2025-04-23T15:21:32+05:30
+date: 2025-04-23T15:25:32+05:30
 draft: false
 params:
   slug: ""
