@@ -1,6 +1,6 @@
 ---
 title: "CyberDefenders: 3CX Supply Chain Attack"
-date: 2025-04-24T00:02:35+05:30
+date: 2025-04-25T00:02:35+05:30
 draft: false
 params:
   slug: ""
