@@ -8,20 +8,50 @@
         <p class="text-3xl max-sm:text-2xl">📝</p>
         <h1 class="text-3xl max-sm:text-2xl font-bold">Blog Archive</h1>
       </div>
+
+      <!-- Countdown Timer (hidden initially) -->
+      <div id="countdownWrapper" class="text-center mt-2 hidden">
+        <p id="countdown" class="text-white bg-gray-900 inline-block px-4 py-2 rounded-xl shadow-md text-sm"></p>
+      </div>
+
       <hr/>
+
       {{ $blogPages := where .Site.RegularPages "Section" "blog" }}
       {{ .Scratch.Set "blogPages" $blogPages }}
       {{ partial "pagination.html" . }}
     </div>
-    <!-- Sidebar -->
-    <!-- <div class="flex flex-col w-5/12 gap-10">
-      <div class="border p-4">
-      </div>
-      <div class="border p-4">
-      </div>
-    </div> -->
   </div>
+
+  <!-- Countdown Script -->
+  <script>
+    const launchDate = new Date("2025-04-23T18:28:00"); // Set your next blog date
+    const now = new Date();
+    const wrapper = document.getElementById("countdownWrapper");
+    const countdownEl = document.getElementById("countdown");
+
+    if (now < launchDate) {
+      wrapper.classList.remove("hidden");
+
+      function updateCountdown() {
+        const diff = launchDate - new Date();
+
+        if (diff <= 0) {
+          wrapper.classList.add("hidden");
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        countdownEl.textContent = `Next blog in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    }
+  </script>
 
   {{ partial "footer_regular.html" . }}  
 {{ end }}
-
