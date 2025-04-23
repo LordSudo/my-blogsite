@@ -1,5 +1,39 @@
 <div class="py-4">
-  <footer>
+  <footer style="text-align: center;">
     <p class="whitespace-nowrap">© {{ now.Year }}. All rights reserved.</p>
+    <p id="uptime" class="whitespace-nowrap">Blog up for: Loading...</p>
+
+    <script>
+      // Calculate uptime since last deployment in December 2024
+      const lastDeployment = new Date('2024-12-03T15:54:00'); // Change to your exact last deployment time
+
+      // Function to update the uptime
+      function updateUptime() {
+        const now = new Date();
+        const uptimeInMillis = now - lastDeployment;
+
+        const days = Math.floor(uptimeInMillis / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((uptimeInMillis % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((uptimeInMillis % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((uptimeInMillis % (1000 * 60)) / 1000);
+
+        // Update the uptime text
+        const uptimeText = `Blog up for <span class="uptime-digit">${days}</span> days <span class="uptime-digit">${hours}</span> hrs <span class="uptime-digit">${minutes}</span> min <span class="uptime-digit">${seconds}</span> sec`;
+        document.getElementById('uptime').innerHTML = uptimeText;
+      }
+
+      // Update uptime every second
+      setInterval(updateUptime, 1000); // 1000 milliseconds = 1 second
+
+      // Initial call to set uptime immediately
+      updateUptime();
+    </script>
+
+    <style>
+      /* Apply sky-400 color to the digits without bold */
+      .uptime-digit {
+        color: #ffffff; /* white */
+      }
+    </style>
   </footer>
 </div>
