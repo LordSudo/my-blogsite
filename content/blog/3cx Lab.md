@@ -1,6 +1,6 @@
 ---
 title: "CyberDefenders: 3CX Supply Chain Attack"
-date: 2025-04-25T00:02:35+05:30
+date: 2025-04-24T08:02:35+05:30
 draft: false
 params:
   slug: ""
@@ -19,7 +19,7 @@ In the quietest moments of routine operations, danger often stirs. A trusted sof
 
 A large multinational corporation heavily relies on the 3CX software for phone communication, making it a critical component of their business operations. After a recent update to the 3CX Desktop App, antivirus alerts flag sporadic instances of the software being wiped from some workstations while others remain unaffected. Dismissing this as a false positive, the IT team overlooks the alerts, only to notice degraded performance and strange network traffic to unknown servers. Employees report issues with the 3CX app, and the IT security team identifies unusual communication patterns linked to recent software updates.
 
-As the threat intelligence analyst, it's your responsibility to examine this possible supply chain attack. Your objectives are to uncover how the attackers compromised the 3CX app, identify the potential threat actor involved, and assess the overall extent of the incident.
+As the threat intelligence analyst, it's your responsibility to examine this possible supply chain attack. Your objectives are to uncover how the attackers compromised the 3CX app, identify the potential threat actor involved, and assess the overall extent of the incident.[Access it from here on CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/3cx-supply-chain/)
 
 ---
 
@@ -170,6 +170,7 @@ These files are key signatures and can be used to trace the activity in affected
 #### **Infection Chain**
 
 Below is the general flow of the attack from initial compromise to data exfiltration.
+
 ![Infection Chain](https://gist.github.com/user-attachments/assets/a6dad5b1-6cca-4388-a67f-82c8508f01fc)
 ---
 
@@ -240,7 +241,7 @@ For more details, refer to the [Zscaler Blog](https://www.zscaler.com/blogs/secu
 
 #### **VirusTotal Analysis**
 
-I uploaded the **3CXDesktopApp installer MSI** to **[VirusTotal](https://www.virustotal.com/gui/file/59e1edf4d82fae4978e97512b0331b7eb21dd4b838b850ba46794d9c7a2c0983/relations)** and conducted a thorough analysis. Here's a breakdown of the results:
+I uploaded the **3CXDesktopApp installer MSI** that was provided as part of the challenge files to **[VirusTotal](https://www.virustotal.com/gui/file/59e1edf4d82fae4978e97512b0331b7eb21dd4b838b850ba46794d9c7a2c0983/relations)** and conducted a thorough analysis. Here's a brief snippet of the  results:
 
 1. **History**: 
 ![VTHistory](https://gist.github.com/user-attachments/assets/485bf6ea-36bd-4814-9485-989d44ffd060)
@@ -317,7 +318,6 @@ The **3CX Supply Chain Attack** serves as a stark reminder that the greatest thr
 The lesson here is clear: **zero trust** is no longer optional. We must question every update, verify every file, and scrutinize every connection. In the world of cybersecurity, trust is a fragile thing. Once broken, it leaves behind not just data, but entire organizations vulnerable to the deepest kinds of betrayal.
 
 ---
-
 
     The trail has gone cold for now, but the echo of these breaches lingers in the silence. As always, the attackers remain patient, watching, and waiting for the next opening.
 
