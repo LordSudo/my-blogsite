@@ -1,12 +1,12 @@
 ---
 title: "Behind the Curtain - Part 2: The Watcher in the Dark"
 date: 2025-04-06T23:00:47+05:30
-draft: false
-params:
-  slug: ""
+draft: true
+slug: ""
 layout: "post"
 tags: ["Social Engineering"]
 authors: ["Lordsudo"]
+banner_image: "(https://gist.github.com/user-attachments/assets/9a9b528d-89c0-47ba-af23-7715f0369989)"
 ---
 # **Behind the Curtain – Part 2: The Watcher in the Dark**
 

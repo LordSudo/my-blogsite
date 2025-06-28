@@ -1,7 +1,7 @@
 ---
 title: "Behind the Curtain"
 date: 2025-04-03T23:00:47+05:30
-draft: false
+draft: true
 params:
   slug: ""
 layout: "post"

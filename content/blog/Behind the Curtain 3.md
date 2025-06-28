@@ -1,7 +1,7 @@
 ---
 title: "Behind the Curtain - Part 3: The Precision of Information"
 date: 2025-04-14T22:38:32+05:30
-draft: false
+draft: true
 params:
   slug: ""
 layout: "post"
