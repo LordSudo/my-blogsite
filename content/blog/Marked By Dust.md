@@ -19,7 +19,7 @@ The Question says:
 
 ---
 
-# **Prologue — The Forgotten Door**
+# Prologue — The Forgotten Door
 
 It began with silence.  
 No coordinates, no hints — only an image.  
@@ -83,7 +83,7 @@ From image to location, from numbers to words — a full circle of discovery, wr
 
 ---
 
-# **Epilogue — The Architect’s Voice**
+# Epilogue — The Architect’s Voice
 
 When I forged *Marked by Dust*, I wanted silence to be its language.  
 An image without context, a riddle without noise. The kind that makes players stop, stare, and listen — not to words, but to the **echo of curiosity**.  
