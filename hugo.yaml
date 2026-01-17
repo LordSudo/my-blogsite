@@ -20,7 +20,7 @@ menus:
     - identifier: tags
       name: Tags
       url: /tags
-      weight: 40
+      weight: 50
 paginate: 10
 permalinks:
   blog: "/blog/:year/:month/:day/:title/"
