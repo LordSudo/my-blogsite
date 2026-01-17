@@ -1,26 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Lord Sudo</title>
+    <title>Home on Lord Sudo: Decrypting the Labyrinth</title>
     <link>http://localhost:1313/my-blogsite/</link>
-    <description>Recent content in Home on Lord Sudo</description>
+    <description>Recent content in Home on Lord Sudo: Decrypting the Labyrinth</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Dec 2024 23:09:47 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 10 Dec 2025 10:23:00 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/my-blogsite/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Sherlock Bumblebee writeup</title>
-      <link>http://localhost:1313/my-blogsite/blog/2024/12/16/sherlock-bumblebee-writeup/</link>
-      <pubDate>Mon, 16 Dec 2024 23:09:47 +0530</pubDate>
-      <guid>http://localhost:1313/my-blogsite/blog/2024/12/16/sherlock-bumblebee-writeup/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://gist.github.com/user-attachments/assets/9a9b528d-89c0-47ba-af23-7715f0369989&#34; alt=&#34;banner&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;htb-sherlocks---bumblebee&#34;&gt;HTB SHERLOCKS - BUMBLEBEE&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;An external contractor has accessed the internal forum here at Forela via the Guest WiFi and they appear to have stolen credentials for the administrative user! We have attached some logs from the forum and a full database dump in sqlite3 format to help you in your investigation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;files-attached&#34;&gt;Files Attached&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://gist.github.com/user-attachments/assets/6fbcf707-1bf3-407f-a425-ab6bf23db7de&#34; alt=&#34;Files&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;&#xA;&lt;p&gt;We shall use a DB Browser for SQLite to make analysis easier. This can be downloaded from &lt;a href=&#34;https://sqlitebrowser.org/&#34;&gt;https://sqlitebrowser.org/&lt;/a&gt;.&lt;/p&gt;</description>
+      <title>Behind the Mayhem: My PerfectRoot CTF 2025 Recap</title>
+      <link>http://localhost:1313/my-blogsite/blog/2025/12/10/behind-the-mayhem-my-perfectroot-ctf-2025-recap/</link>
+      <pubDate>Wed, 10 Dec 2025 10:23:00 +0530</pubDate>
+      <guid>http://localhost:1313/my-blogsite/blog/2025/12/10/behind-the-mayhem-my-perfectroot-ctf-2025-recap/</guid>
+      <description>&lt;h1 id=&#34;-lights-camera-chaos&#34;&gt;🎉 Lights, Camera, Chaos!&lt;/h1&gt;&#xA;&lt;p&gt;If you heard loud keyboard smashing on the weekend of December 5th…&lt;br&gt;&#xA;yeah, that was probably us.&lt;/p&gt;&#xA;&lt;p&gt;PerfectRoot CTF 2025 went live, thousands of players stormed the gates, the Discord server transformed into a marketplace of panic and memes, and somewhere in the background I was praying the infra wouldn’t spontaneously combust.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Spoiler: it didn’t.&lt;/strong&gt;&lt;br&gt;&#xA;Miracles &lt;em&gt;do&lt;/em&gt; happen.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;perfectroot-ctf-2025--my-behind-the-scenes-recap-organized-chaos-done-right&#34;&gt;&lt;strong&gt;PerfectRoot CTF 2025 — My Behind-the-Scenes Recap (Organized Chaos Done Right)&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;PerfectRoot CTF 2025 is officially in the books — and wow, what a ride.&lt;br&gt;&#xA;This year’s event wasn’t just bigger… it was louder, faster, and way more chaotic in the best possible way. If last year was a warm-up jog, this year was a sprint uphill while juggling flaming Docker containers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marked by Dust - ADHoc Intel Walkthrough</title>
+      <link>http://localhost:1313/my-blogsite/blog/2025/10/31/marked-by-dust-adhoc-intel-walkthrough/</link>
+      <pubDate>Fri, 31 Oct 2025 20:00:47 +0530</pubDate>
+      <guid>http://localhost:1313/my-blogsite/blog/2025/10/31/marked-by-dust-adhoc-intel-walkthrough/</guid>
+      <description>&lt;h1 id=&#34;-marked-by-dust&#34;&gt;🕯️ Marked by Dust&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; OSINT&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;“Time has buried many secrets, but even in the dust, a precise place remains.”&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;The Question says:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Every place has its special words; find the ones that belong to this artifact&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;prologue--the-forgotten-door&#34;&gt;Prologue — The Forgotten Door&lt;/h1&gt;&#xA;&lt;p&gt;It began with silence.&lt;br&gt;&#xA;No coordinates, no hints — only an image.&lt;br&gt;&#xA;A sun-scorched door of ancient wood, framed in cracked earth, its texture heavy with history. It stared back at the solver like a memory half-recalled, daring them to look closer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dig Deeper Walkthrough - Dewald Roode Cybersecurity Hackathon 2025</title>
+      <link>http://localhost:1313/my-blogsite/blog/2025/06/28/dig-deeper-walkthrough-dewald-roode-cybersecurity-hackathon-2025/</link>
+      <pubDate>Sat, 28 Jun 2025 11:23:00 +0530</pubDate>
+      <guid>http://localhost:1313/my-blogsite/blog/2025/06/28/dig-deeper-walkthrough-dewald-roode-cybersecurity-hackathon-2025/</guid>
+      <description>&lt;h1 id=&#34;-prologue-whispers-beneath-the-noise&#34;&gt;🕳️ Prologue: Whispers Beneath the Noise&lt;/h1&gt;&#xA;&lt;p&gt;In the endless expanse of the cyber realm, secrets rarely scream — they whisper. Steganography is the ancient art of these whispers: the delicate craft of hiding a truth so deeply that even when it is in plain sight, it remains unseen.&lt;/p&gt;&#xA;&lt;p&gt;Where cryptography cloaks a message behind an unbreakable cipher, steganography conceals its very existence. A song that carries a confession in static. An image that smiles innocently while concealing a weapon beneath its pixels. A file that hums one story to the ear while hiding another for those patient enough to listen closer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>3=crowd? - Bitwall CTF OSINT Walkthrough</title>
+      <link>http://localhost:1313/my-blogsite/blog/2025/05/05/3crowd-bitwall-ctf-osint-walkthrough/</link>
+      <pubDate>Mon, 05 May 2025 16:30:00 +0530</pubDate>
+      <guid>http://localhost:1313/my-blogsite/blog/2025/05/05/3crowd-bitwall-ctf-osint-walkthrough/</guid>
+      <description>&lt;h1 id=&#34;-3crowd&#34;&gt;🕳️ 3=crowd?&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;A journey into nothingness.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;-prologue&#34;&gt;🕯️ Prologue&lt;/h2&gt;&#xA;&lt;p&gt;The screen flickered. No IP addresses to scan. No EXIF tags to scrub. No usernames to pivot from. Only a prompt:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;“All through time, we have strived to achieve precision in all our workings.&lt;br&gt;&#xA;Come our beloved cyberspace, and nothing became one of the most important fundamentals of the entire industry.&lt;br&gt;&#xA;Trace back its true origin and describe in &lt;strong&gt;three words&lt;/strong&gt; that which is known to all yet unknown to all.”&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CyberDefenders: 3CX Supply Chain Attack</title>
+      <link>http://localhost:1313/my-blogsite/blog/2025/04/24/cyberdefenders-3cx-supply-chain-attack/</link>
+      <pubDate>Thu, 24 Apr 2025 08:02:35 +0530</pubDate>
+      <guid>http://localhost:1313/my-blogsite/blog/2025/04/24/cyberdefenders-3cx-supply-chain-attack/</guid>
+      <description>&lt;h2 id=&#34;prologue-the-quiet-before-the-storm&#34;&gt;&lt;strong&gt;Prologue: The Quiet Before the Storm&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;In the quietest moments of routine operations, danger often stirs. A trusted software update, something so mundane, becomes the entry point for a dark and malicious force. The &lt;strong&gt;3CX Supply Chain Attack&lt;/strong&gt;—an incident where trust was manipulated, and a seemingly harmless software update became a weapon of digital warfare. Prepare yourself, for the tale is one of hidden danger, covert movements, and the eerie calm before a storm. Let’s walk through this, step by step, through the veil of deceit and into the truth that lies beneath.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CyberDefenders: Oski Lab</title>
+      <link>http://localhost:1313/my-blogsite/blog/2025/04/19/cyberdefenders-oski-lab/</link>
+      <pubDate>Sat, 19 Apr 2025 22:00:47 +0530</pubDate>
+      <guid>http://localhost:1313/my-blogsite/blog/2025/04/19/cyberdefenders-oski-lab/</guid>
+      <description>&lt;h2 id=&#34;prologue--into-the-shadows&#34;&gt;Prologue — Into the Shadows&lt;/h2&gt;&#xA;&lt;p&gt;In the endless chess game between defenders and adversaries, sharpening one&amp;rsquo;s edge is a ritual as old as the hunt itself. Seeking to refresh my threat intelligence tradecraft, I turned to CyberDefenders, a playground for digital detectives, and selected a case that promised just the right dose of malice: Oski. &lt;a href=&#34;https://cyberdefenders.org/blueteam-ctf-challenges/oski/&#34;&gt;Access it from here&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Beneath its name lay the fragments of a malicious campaign, waiting to be pieced together — a puzzle designed to challenge both observation and deduction. What began as an exercise would soon unravel into a tale of compromise, command, and control.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🙋‍♂️ About Me</title>
       <link>http://localhost:1313/my-blogsite/about.html</link>
       <pubDate>Thu, 28 Mar 2024 15:00:00 +0000</pubDate>
       <guid>http://localhost:1313/my-blogsite/about.html</guid>
-      <description>&lt;p&gt;Greetings, intrepid wanderers!&lt;br&gt;&#xA;I am &lt;strong&gt;Lord Sudo&lt;/strong&gt;, a red teamer and CTF player for &lt;a href=&#34;https://twitter.com/p3rf3ctr00t&#34;&gt;p3rf3ctr00t&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Join me on a journey through the enigmatic landscapes of digital intrigue. Within these virtual corridors, secrets await discovery, and the art of exploration becomes the key to unlocking hidden knowledge.&lt;/p&gt;&#xA;&lt;p&gt;Dare to delve into the heart of my mysterious works, where the boundaries between reality and the digital realm blur. Uncover the cryptic narratives that weave through the tapestry of cybernetic adventures.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;I am Lord Sudo.&lt;/strong&gt;&lt;br&gt;&#xA;Red teamer. CTF tactician. Student of systems—and their failure points.&lt;br&gt;&#xA;Proud operative of &lt;strong&gt;p3rf3ctr00t&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This space is not a blog. It is a ledger.&lt;br&gt;&#xA;A chronicle of engagements, extractions, exploits—both technical and psychological.&lt;/p&gt;&#xA;&lt;p&gt;I navigate the unseen layers of digital infrastructure, where security is an illusion and silence is a weapon. Whether it&amp;rsquo;s code, configuration, or the human element—if it can be broken, it can be understood. And if it can be understood, it can be controlled.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTB Sherlocks:Bumblebee Writeup</title>
+      <link>http://localhost:1313/my-blogsite/blog/2024/01/10/htb-sherlocksbumblebee-writeup/</link>
+      <pubDate>Wed, 10 Jan 2024 09:09:47 +0530</pubDate>
+      <guid>http://localhost:1313/my-blogsite/blog/2024/01/10/htb-sherlocksbumblebee-writeup/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://gist.github.com/user-attachments/assets/9a9b528d-89c0-47ba-af23-7715f0369989&#34; alt=&#34;banner&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;htb-sherlocks---bumblebee&#34;&gt;HTB SHERLOCKS - BUMBLEBEE&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;An external contractor has accessed the internal forum here at Forela via the Guest WiFi and they appear to have stolen credentials for the administrative user! We have attached some logs from the forum and a full database dump in sqlite3 format to help you in your investigation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;files-attached&#34;&gt;Files Attached&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://gist.github.com/user-attachments/assets/6fbcf707-1bf3-407f-a425-ab6bf23db7de&#34; alt=&#34;Files&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;&#xA;&lt;p&gt;We shall use a DB Browser for SQLite to make analysis easier. This can be downloaded from &lt;a href=&#34;https://sqlitebrowser.org/&#34;&gt;https://sqlitebrowser.org/&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
