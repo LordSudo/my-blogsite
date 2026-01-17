@@ -13,6 +13,10 @@ menus:
       name: Blogs
       url: /blog
       weight: 30
+    - identifier: Chronicles
+      name: Chronicles
+      url: /Chronicles
+      weight: 40      
     - identifier: tags
       name: Tags
       url: /tags
