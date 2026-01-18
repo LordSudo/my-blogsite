@@ -37,7 +37,7 @@ I’m still ramping back up after the break, so this week involved a lot of smal
 On top of that, I’m currently researching and designing challenges for a few upcoming CTFs that I’m authoring, which means juggling ideas, notes, and half-finished diagrams in my head.
 
 ## Other updates
-- Added a **Chronicles** page to the blog (mostly to organise things… and maybe a little to show off).
+- Added a **Chronicles** page to the blog (mostly to organise things… and maybe a little to show off) - This almost made me build a new blogsite lol.
 - Started working on finishing writeups for several challenges I created toward the end of last year.
 
 ## Looking ahead
