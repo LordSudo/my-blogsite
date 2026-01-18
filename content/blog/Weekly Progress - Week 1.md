@@ -17,6 +17,8 @@ This week marked my return from a much-needed break spent doing the highly advan
 
 Instead of easing in gently, I decided to jump straight back in and see how rusty I’d become.
 
+Took me a whole 2 hours to remember the master password to my password manager before I could log in anywhere. Never change your password before a long break. I didnt even remember why I changed it in the first place.
+
 ## What I worked on
 To sanity-check my skills, I sat three security exams from SecOps:
 
