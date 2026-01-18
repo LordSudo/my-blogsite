@@ -11,7 +11,7 @@ authors: ["Lordsudo"]
 
 # Weekly Progress Log — Week 1
 
-**Week starting:** 12th Jan
+**Week starting:** 12th Jan 2026
 
 This week marked my return from a much-needed break spent doing the highly advanced technique known as *touching grass*. After a busy year, I came back feeling relaxed, refreshed, and in a surprisingly good mental state.
 
